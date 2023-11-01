@@ -1,0 +1,162 @@
+a {
+    text-decoration: none;
+}
+
+#text {
+    text-shadow: 1px 1px 1px black;
+}
+
+body {
+    background-color: black;
+    color: white;
+}
+
+#div1 {
+    background: linear-gradient(rgb(0, 0, 1), rgb(1, 18, 54)) !important;
+    position: relative;
+    height: 100%;
+    z-index: 2;
+    border: none;
+}
+#input-design
+{
+ background: linear-gradient(rgb(0, 14, 34), rgb(0, 37, 117)) !important; 
+ border:none;
+}
+input::placeholder
+{
+    color: white !important;
+}
+.con {
+    position: relative;
+    overflow: hidden;
+    border-radius: 8px;
+    padding: 0.4%;
+}
+textarea::placeholder
+{
+    color: white;
+}
+.row
+{
+    --bs-gutter-x:0rem;
+}
+.con::before {
+    content: "";
+    position: absolute;
+    background: linear-gradient(rgb(255, 0, 255), rgb(255, 0, 0));
+    left: -50%;
+    top: -50%;
+    width: 95%;
+    height: 95%;
+    transform-origin: bottom right;
+    z-index: 1;
+    transition: transform 0.8s;
+}
+
+.con::after {
+    content: "";
+    position: absolute;
+    background: linear-gradient(rgb(0, 183, 104), rgb(0, 115, 255));
+    left: -50%;
+    top: -50%;
+    width: 95%;
+    height: 95%;
+    transform-origin: bottom right;
+    transform: rotate(180deg);
+    animation-direction: alternate;
+    z-index: 1;
+    transition: transform 0.8s;
+}
+
+.con:hover::after {
+    transform: rotate(0deg);
+}
+
+.con:hover::before {
+    transform: rotate(-180deg);
+}
+
+.custom-button {
+    position: relative;
+    padding: 10px 20px;
+    background-color: #3498db;
+    color: #fff;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+    box-shadow: 1px 1px 11px 4px rgb(0, 123, 255);
+    border-radius: 9px;
+    transition: box-shadow 0.5s;
+}
+
+.custom-button::before
+{
+    color: white;
+    content: "Learn More";
+    border-radius: 9px;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    transition: transform 0.3s;
+    background: linear-gradient(rgb(0, 102, 255), rgb(86, 0, 235));
+    box-shadow: 1px 1px 20px 11px rgb(92, 0, 172);
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    z-index: 1;
+    transform: scale(0);
+
+    
+}
+
+
+
+.custom-button:hover::before {
+    transform: scale(1);
+}
+
+.custom-btn {
+    position: relative;
+    padding: 10px 20px;
+    background-color: #3498db;
+    color: #fff;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+    box-shadow: 1px 1px 11px 4px rgb(0, 123, 255);
+    border-radius: 9px;
+    transition: box-shadow 0.5s;
+}
+
+.custom-btn::before
+{
+    color: white;
+    content: "Send message";
+    border-radius: 9px;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    transition: transform 0.3s;
+    background: linear-gradient(rgb(0, 102, 255), rgb(86, 0, 235));
+    box-shadow: 1px 1px 20px 11px rgb(92, 0, 172);
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    z-index: 1;
+    transform: scale(0);
+
+    
+}
+
+
+
+.custom-btn:hover::before {
+    transform: scale(1);
+}
